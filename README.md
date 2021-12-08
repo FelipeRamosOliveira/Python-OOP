@@ -11,7 +11,9 @@ Your car is your object, but at the store where you bought it there were several
 Thus, abstracting the analogy a little, a class is a set of characteristics and behaviors that define the set of objects belonging to that class. Note that the class itself is an abstract concept, like a mold, made concrete and palpable through the creation of an object. We call this creation the instantiation of the class, as if we were using this template (class) to create an object.
 
 ### Code example
+
 ´´´python
+
     class Car:
         def __init__(self, engine, color, doors, transmission, wheels, steering_wheel, gearbox, mirrors, headlights, honk, music):
             self.engine = engine
@@ -25,6 +27,7 @@ Thus, abstracting the analogy a little, a class is a set of characteristics and 
             self.headlights = headlights
             self.honk = honk
             self.music = music
+
 ´´´
 
 # Pillars of OOP
