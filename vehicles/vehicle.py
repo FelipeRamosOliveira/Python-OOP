@@ -1,13 +1,17 @@
-import random
 import datetime
-from math import floor
+from itertools import count
 from abc import ABC, abstractmethod
 
 
 class Vehicle(ABC):
+    
+    vehicles_count = 0
+    
     @abstractmethod
     def __init__(self, name: str, model: str, year: int, color: str, wheels: int, seats: int, market_value: float) -> object:
-
+        
+        Vehicle.vehicles_count+=1
+        
         self.name = name
         self.model = model
         self.year = year
